@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webbster</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /* Header and Hero Section */
+        header {
+            height: 100vh;
+            background: url('https://wallpapers.com/images/featured/kobe-bryant-4k-dnz6nzootzly9sgn.jpg') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        header a {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 0.8rem 2rem;
+            background: #c0392b;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        header a:hover {
+            background: #e74c3c;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 0.8rem 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 1.5rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #e74c3c;
+        }
+
+        /* Products Section */
+        section {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .product {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-content {
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .product h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        .product p {
+            font-size: 1.2rem;
+            color: #27ae60;
+        }
+
+        .product a {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.6rem 1.5rem;
+            background: #c0392b;
+            color: white;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .product a:hover {
+            background: #e74c3c;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background: #c0392b;
+            color: white;
+            padding: 1rem;
+            margin-top: 3rem;
+        }
+
+        /* Playlist Section */
+        #playlist {
+            text-align: center;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+
+        #playlist iframe {
+            border-radius: 12px;
+        }
+
+        #muteButton, #unmuteButton {
+            margin: 1rem 0.5rem;
+            padding: 0.6rem 1.2rem;
+            background: #c0392b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        #muteButton:hover, #unmuteButton:hover {
+            background: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <header>
+        <h1>Webbster</h1>
+        <p>Relentless. Resilient. Mamba.</p>
+        <a href="#products">Shop Now</a>
+    </header>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://cf.cjdropshipping.com/17321472/5765e2ae-93fb-447e-ba2e-4b33600221a8.jpg?x-oss-process=image/resize,m_fill,m_pad,w_800,h_800" alt="Pull-Up Bar">
+                <div class="product-content">
+                    <h3>Pull-Up Bar</h3>
+                    <p>₱334.04</p>
+                    <a href="https://example.com/pullupbar" target="_blank">Buy Now</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://www.serioussteel.com/cdn/shop/files/Latex-Free-Bands_Black-Set_Main-Image_1500x1500_b0156be9-a4f6-4a58-a808-eb55b8af7672.jpg?v=1721766364" alt="Resistance Bands">
+                <div class="product-content">
+                    <h3>Resistance Bands</h3>
+                    <p>₱350</p>
+                    <a href="https://example.com/resistancebands" target="_blank">Buy Now</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/fd6c423c669a44afaa46aa4f0099f00f_9366/Yoga_Mat_Black_EB4031_43_detail.jpg" alt="Gym Mat">
+                <div class="product-content">
+                    <h3>Yoga Mat</h3>
+                    <p>₱350</p>
+                    <a href="https://example.com/gymmat" target="_blank">Buy Now</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://cf.cjdropshipping.com/17321472/13dc012f-8e2d-43ff-ba93-c44f88dba934.jpg?x-oss-process=image/resize,m_fill,m_pad,w_800,h_800" alt="Skipping Rope">
+                <div class="product-content">
+                    <h3>Skipping Rope</h3>
+                    <p>₱199</p>
+                    <a href="https://www.cjdropshipping.com/product/bearing-skipping-rope-jumping-rope-with-ball-bearings-for-exercise-speed-training-extreme-jumping-p-1859602379163668482.html" target="_blank">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="playlist">
+        <h2>Listen While You Shop</h2>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5fivru4QF1ajWmDoyiGSnp?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <button id="muteButton">Mute</button>
+        <button id="unmuteButton" style="display: none;">Unmute</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Webbster's Shop. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const muteButton = document.getElementById('muteButton');
+        const unmuteButton = document.getElementById('unmuteButton');
+        const spotifyIframe = document.querySelector('#playlist iframe');
+
+        muteButton.addEventListener('click', () => {
+            spotifyIframe.src = '';
+            muteButton.style.display = 'none';
+            unmuteButton.style.display = 'inline-block';
+        });
+
+        unmuteButton.addEventListener('click', () => {
+            spotifyIframe.src = 'https://open.spotify.com/embed/playlist/5fivru4QF1ajWmDoyiGSnp?utm_source=generator';
+            unmuteButton.style.display = 'none';
+            muteButton.style.display = 'inline-block';
+        });
+    </script>
+</body>
+</html>
